@@ -37,7 +37,7 @@ const AvailableMeals = () => {
           id={meal.id}
           key={meal.id}
           name={meal.name}
-          discription={meal.description}
+          description={meal.description}
           price={meal.price}
         />
       )
