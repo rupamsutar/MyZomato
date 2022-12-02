@@ -1,4 +1,5 @@
 import React from "react";
+import Classes from "./Cart.module.css";
 
 const Cart = () => {
     const cartItems = (
@@ -21,8 +22,14 @@ const Cart = () => {
     return (
         <div>
             {cartItems}
-            <div></div>
-            <div></div>
+            <div className={Classes.total}>
+                <span>Total Amount</span>
+                <span>35.62</span>
+            </div>
+            <div className={Classes.actions}>
+                <button className={Classes["button--alt"]}>Close</button>
+                <button className={Classes.button}>Order</button>
+            </div>
         </div>
     )
 
