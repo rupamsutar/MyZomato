@@ -13,6 +13,7 @@ const HeaderCartButton = (props) => {
         );
     }, 0);
 
+    
 
     return (
         <button className={Classes.button} onClick={props.onClick} >
