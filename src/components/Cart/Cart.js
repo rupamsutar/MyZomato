@@ -5,11 +5,15 @@ import CartContext from "../../store/cart-context";
 import CartItem from "./CartItem";
 
 const Cart = (props) => {
-    const cartItemRemoveHandler = id => {};
-    const cartItemAddHandler = item => {};
-
-
     const cartCtx = useContext(CartContext);
+
+
+    const cartItemRemoveHandler = id => {};
+    const cartItemAddHandler = item => {
+        cartCtx.addItem({...item, totalAmount:1 })
+    };
+
+
     const cartItems = (
         <ul className={Classes["cart-items"]}>
             {cartCtx.items.map((item) => (
