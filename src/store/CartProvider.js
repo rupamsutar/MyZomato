@@ -16,20 +16,21 @@ const cartReducer = (state, action) => {
 
         const existingCartItem = state.items[existingCartItemIndex];
 
-        console.log(existingCartItem);
+        // console.log(action.item);
+        // console.log(existingCartItem);
         let updatedItem;
         let updatedItems;
 
         if (existingCartItem) {
             updatedItem = {
                 ...existingCartItem,
-                amount: existingCartItem.amount + action.item.amount
+                totalAmount: existingCartItem.totalAmount + action.item.totalAmount
             };
+
             updatedItems = [...state.items];
             updatedItems[existingCartItemIndex] = updatedItem;
         } else {
-            updatedItem = {...action.item}
-            updatedItems = state.items.concat(updatedItem);
+            updatedItems = state.items.concat(action.item);
         }
 
         return {
