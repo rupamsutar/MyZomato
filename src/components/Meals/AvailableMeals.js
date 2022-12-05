@@ -18,16 +18,22 @@ const DUMMY_MEALS = [
     },
     {
       id: 'm3',
-      name: 'Malvani Chicken Handi',
+      name: 'Malvani Chicken Handi, Jagdamba (Khed Shivapur)',
       description: 'Gavran chicken with desi spices !',
       price: 599,
     },
     {
       id: 'm4',
-      name: 'Sharma IceCream',
+      name: 'Sharma IceCream, Nigdi',
       description: 'Best seller in the region',
       price: 140,
     },
+    {
+      id: 'm5',
+      name: 'Geeta Pavbhaji, Nigdi',
+      description: 'Tastiest Masala-Pav and bhaji with variety of flavours !',
+      price: 170,
+    }
   ];
 
 const AvailableMeals = () => {
