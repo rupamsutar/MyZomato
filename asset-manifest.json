@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MyZomato/static/css/main.9c2b6d16.css",
-    "main.js": "/MyZomato/static/js/main.cfcb9a37.js",
+    "main.js": "/MyZomato/static/js/main.2f8258d3.js",
     "static/media/meals.jpg": "/MyZomato/static/media/meals.2971f633fc1382581cbf.jpg",
     "index.html": "/MyZomato/index.html",
     "main.9c2b6d16.css.map": "/MyZomato/static/css/main.9c2b6d16.css.map",
-    "main.cfcb9a37.js.map": "/MyZomato/static/js/main.cfcb9a37.js.map"
+    "main.2f8258d3.js.map": "/MyZomato/static/js/main.2f8258d3.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2b6d16.css",
-    "static/js/main.cfcb9a37.js"
+    "static/js/main.2f8258d3.js"
   ]
 }
