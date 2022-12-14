@@ -42,7 +42,12 @@ const Checkout = (props) => {
             return;
         }
         if (formIsValid) {
-            //submit
+            props.onConfirm({
+                name: enteredName,
+                street: enteredStreet,
+                postalCode: enteredPostalCode,
+                city: enteredCity
+            });
         }
     }
     
