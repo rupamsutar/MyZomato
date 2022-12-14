@@ -40,17 +40,11 @@ const AvailableMeals = () => {
       <p>{hasHTTPError}</p>
     </section>
   }
-
-
   if (isLoading) {
     return <section className={Classes.mealsLoading}>
       <p>Loading...</p>
     </section>
   }
-
-
-
-
   const mealsList = meals.map(meal => {
     return(
       <MealItem 
